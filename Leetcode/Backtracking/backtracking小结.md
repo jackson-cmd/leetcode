@@ -1,0 +1,1 @@
+backtracking回溯，是为了找到所有解，其实就是类似迷宫，从头找到尾，画decision tree来想思路。 
