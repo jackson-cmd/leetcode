@@ -44,9 +44,13 @@ class Solution:
 class Test(unittest.TestCase):
     def test(self):
         solution = Solution()
-        ans = solution.twoSum([1, 2, 3], 4)
         self.assertEqual(
-            ans, [0, 2], "test case fail for twoSum([1, 2, 3], 4)")
+            solution.twoSum([1, 2, 3], 4), [0, 2], "test case 1 fail")
+
+    def test_duplicate(self):
+        solution = Solution()
+        self.assertEqual(
+            solution.twoSum([-1, -1, 3, 4], 7), [2, 3], "test case 2 fail")
 
 
 if __name__ == "__main__":
